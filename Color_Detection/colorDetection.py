@@ -4,7 +4,7 @@ from util import getlimits
 from PIL import Image
 
 webCam = cv2.VideoCapture(0)
-orange = [0, 255, 255]
+yellow = [0, 255, 255]
 while True:
     ret,frame = webCam.read()
     hsv_image = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
