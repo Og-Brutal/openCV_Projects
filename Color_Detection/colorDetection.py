@@ -8,7 +8,7 @@ yellow = [0, 255, 255]
 while True:
     ret,frame = webCam.read()
     hsv_image = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
-    lowerLimit,upperLimit=getlimits(orange)
+    lowerLimit,upperLimit=getlimits(yellow)
     
     mask = cv2.inRange(hsv_image,lowerLimit,upperLimit)
 
